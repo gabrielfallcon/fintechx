@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "../styles/base/_global.scss";
+import { Providers } from "../provider/theme/theme.provider";
 
 export const metadata: Metadata = {
   title: "FintechX",
@@ -13,8 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="pt-BR" suppressHydrationWarning>
+      <body className="min-h-full flex flex-col">
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

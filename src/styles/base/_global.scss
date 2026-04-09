@@ -1,13 +1,5 @@
 @use "../abstracts/breakpoints";
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
+@use "../themes/tokens" as *;
 
 * {
   font-family: "DM Sans", sans-serif;
@@ -21,8 +13,8 @@ html {
 body {
   font-optical-sizing: auto;
   font-style: normal;
-  color: #191919;
-  background-color: #f5f5f5;
+  color: var(--color-text);
+  background-color: var(--color-bg);
 }
 
 html,
@@ -38,7 +30,7 @@ ol {
 }
 
 a {
-  color: #191919;
+  color: var(--color-link);
   text-decoration: none;
 }
 
