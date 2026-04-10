@@ -1,0 +1,67 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.chatRequest,
+.chatResponse {
+  padding: 26px 34px;
+  display: flex;
+}
+.chatRequest {
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+
+  .info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    & > img {
+      width: 37px;
+      height: 37px;
+      border-radius: 6px;
+    }
+
+    span {
+      font-size: 12px;
+      line-height: 160%;
+      font-weight: 500;
+      color: var(--color-text--secondary);
+    }
+  }
+}
+
+.chatResponse {
+  flex-direction: column;
+  background-color: var(--color-box);
+  gap: 24px;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & > svg {
+      width: 45px;
+      height: 45px;
+      path {
+        fill: var(--color-text--primary);
+      }
+    }
+
+    & > div {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+
+  span {
+    font-size: 12px;
+    line-height: 160%;
+    font-weight: 500;
+    color: var(--color-text--secondary);
+  }
+}

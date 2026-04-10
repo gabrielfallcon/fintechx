@@ -1,0 +1,41 @@
+@use "../../../styles/abstracts/breakpoints";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px 36px 36px;
+
+  svg {
+    color: var(--color-text--primary);
+  }
+}
+
+.iconBack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 16px;
+  box-shadow: 5.92px 11.84px 23.68px 0px #d3d1d84d;
+}
+
+.title {
+  font-size: 22px;
+  color: var(--color-text--primary);
+  letter-spacing: 0.03em;
+  font-weight: 500;
+}
+
+.menu {
+  font-size: 60px;
+  color: #cbcccd;
+  cursor: pointer;
+  display: none;
+  transform: translateY(-16px);
+}
+
+.showIcon {
+  display: flex;
+}

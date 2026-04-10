@@ -1,0 +1,39 @@
+.inviteContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  padding: 0 34px;
+
+  & > svg path {
+    fill: var(--color-text--primary);
+  }
+}
+
+.refer {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 50px 0 8px;
+}
+
+.infoGift {
+  width: 100%;
+  max-width: 287px;
+  font-size: 17px;
+  line-height: 140%;
+  color: var(--color-text--secondary);
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.btnCopy {
+  width: stretch;
+  height: 74px;
+  border-radius: 16px;
+  border: 2px solid var(--color-text--primary);
+  background-color: var(--color-box);
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

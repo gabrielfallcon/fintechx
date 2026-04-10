@@ -1,5 +1,5 @@
-import { OnBoardingTag } from "../presentation";
+import { WelcomeTag } from "../presentation";
 
 export default function OnboardingPage() {
-  return <OnBoardingTag />;
+  return <WelcomeTag />;
 }

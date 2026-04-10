@@ -1,0 +1,91 @@
+.profileContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 60px;
+
+  img {
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+  }
+}
+
+.profileData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  .name {
+    font-size: 27px;
+    font-weight: 600;
+    color: var(--color-text--primary);
+    text-align: center;
+    margin: 0;
+  }
+
+  span {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text--tertiary);
+    text-align: center;
+  }
+}
+
+.listMenu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 14px 34px;
+  gap: 0 24px;
+  position: relative;
+}
+
+.security {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    & > svg {
+      top: 38px;
+    }
+  }
+
+  span {
+    font-size: 16px;
+    color: var(--color-text--tertiary);
+    padding-left: 44px;
+
+    & + span {
+      margin-top: 8px;
+    }
+  }
+}
+
+.icEnter {
+  position: absolute;
+  right: 34px;
+  top: 50%;
+  transform: translateY(-50%);
+}

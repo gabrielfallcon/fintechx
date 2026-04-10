@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "../styles/base/_global.scss";
-import { Providers } from "../provider/theme/theme.provider";
+import { AppProvider } from "../providers/app/app.provider";
+import { Providers } from "../providers/theme/theme.provider";
 
 export const metadata: Metadata = {
   title: "FintechX",
@@ -16,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <body className="min-h-full flex flex-col">
-        <Providers>{children}</Providers>
+        <AppProvider>
+          <Providers>{children}</Providers>
+        </AppProvider>
       </body>
     </html>
   );
