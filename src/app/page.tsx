@@ -1,5 +1,5 @@
-import { WelcomeTag } from "../presentation";
+import { IntroGateTag } from "../presentation";
 
 export default function OnboardingPage() {
-  return <WelcomeTag />;
+  return <IntroGateTag />;
 }
