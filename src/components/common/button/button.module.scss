@@ -1,0 +1,73 @@
+.button {
+  width: 100%;
+  max-width: 320px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 12px;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  font-weight: 500;
+}
+
+/* VARIANTS */
+
+.primary {
+  background: var(--button-primary);
+  color: white;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.secondary {
+  background: var(--button-secondary);
+  color: var(--color-text);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--color-text);
+}
+
+/* SIZES */
+
+.sm {
+  height: 32px;
+  padding: 0 12px;
+  font-size: 12px;
+}
+
+.md {
+  height: 47px;
+  padding: 0 16px;
+  font-size: 14px;
+}
+
+.lg {
+  height: 67px;
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+/* EXTRAS */
+
+.fullWidth {
+  width: 100%;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+}

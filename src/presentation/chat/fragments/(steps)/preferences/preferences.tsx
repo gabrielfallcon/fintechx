@@ -3,17 +3,22 @@ import { ScreenTag } from "@/src/components";
 import {
   FiCreditCard,
   FiEye,
+  FiMoon,
   FiPenTool,
   FiSettings,
+  FiSun,
   FiUser,
 } from "react-icons/fi";
 
 import styles from "./preferences.module.scss";
 import { useApp } from "@/src/hooks/app/useApp.hook";
 import { clsx } from "clsx";
+import { useTheme } from "next-themes";
+import { useAppTheme } from "@/src/hooks/theme/useTheme.hook";
 
 const PreferencesComponent = () => {
   const { setStepScreen } = useApp();
+  const { theme, toggleTheme } = useAppTheme();
 
   return (
     <ScreenTag title="Preference" onBack={() => setStepScreen("profile")}>
@@ -65,11 +70,17 @@ const PreferencesComponent = () => {
             <span>Get $3 For Each Invitation!</span>
           </div>
 
-          <div className={clsx(styles.item)}>
+          <div className={clsx(styles.item)} onClick={toggleTheme}>
             <div>
               <FiSettings size={28} />
 
               <p>Theme Colour</p>
+
+              {theme === "dark" ? (
+                <FiSun className={styles.iconTheme} size={20} />
+              ) : (
+                <FiMoon className={styles.iconTheme} size={20} />
+              )}
             </div>
 
             <span>Change Your Theme Colour</span>

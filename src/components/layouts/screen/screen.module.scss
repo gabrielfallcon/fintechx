@@ -18,7 +18,7 @@
   width: 45px;
   height: 45px;
   border-radius: 16px;
-  box-shadow: 5.92px 11.84px 23.68px 0px #d3d1d84d;
+  box-shadow: 2px 2.92px 2.84px -0.32px #d3d1d84d;
 }
 
 .title {
@@ -32,10 +32,13 @@
   font-size: 60px;
   color: #cbcccd;
   cursor: pointer;
-  display: none;
+  opacity: 0;
   transform: translateY(-16px);
+  min-width: 55px;
+  object-fit: none;
 }
 
 .showIcon {
-  display: flex;
+  opacity: 1;
+  object-fit: cover;
 }
